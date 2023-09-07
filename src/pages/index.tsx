@@ -8,26 +8,92 @@ const ApexChart = dynamic<any>(() => import("react-apexcharts"), {
 const App = () => {
   const [chartData, setChartData] = useState({
     options: {
-      series: [
-        {
-          name: "Actual",
-          data: [
-            {
-              x: "2011",
-              y: 12,
-              goals: [
-                {
-                  name: "Expected",
-                  value: 14,
-                  strokeWidth: 2,
-                  strokeDashArray: 2,
-                  strokeColor: "#775DD0",
-                },
-              ],
-            },
-          ],
-        },
-      ],
+      series: {
+        name: "Actual",
+        data: [
+          {
+            x: "2011",
+            y: 12,
+            goals: [
+              {
+                name: "Expected",
+                value: 14,
+                strokeWidth: 2,
+                strokeDashArray: 2,
+                strokeColor: "#775DD0",
+              },
+            ],
+          },
+          {
+            x: "2012",
+            y: 44,
+            goals: [
+              {
+                name: "Expected",
+                value: 54,
+                strokeWidth: 5,
+                strokeHeight: 10,
+                strokeColor: "#775DD0",
+              },
+            ],
+          },
+          {
+            x: "2013",
+            y: 54,
+            goals: [
+              {
+                name: "Expected",
+                value: 52,
+                strokeWidth: 10,
+                strokeHeight: 0,
+                strokeLineCap: "round",
+                strokeColor: "#775DD0",
+              },
+            ],
+          },
+          {
+            x: "2014",
+            y: 66,
+            goals: [
+              {
+                name: "Expected",
+                value: 61,
+                strokeWidth: 10,
+                strokeHeight: 0,
+                strokeLineCap: "round",
+                strokeColor: "#775DD0",
+              },
+            ],
+          },
+          {
+            x: "2015",
+            y: 81,
+            goals: [
+              {
+                name: "Expected",
+                value: 66,
+                strokeWidth: 10,
+                strokeHeight: 0,
+                strokeLineCap: "round",
+                strokeColor: "#775DD0",
+              },
+            ],
+          },
+          {
+            x: "2016",
+            y: 67,
+            goals: [
+              {
+                name: "Expected",
+                value: 70,
+                strokeWidth: 5,
+                strokeHeight: 10,
+                strokeColor: "#775DD0",
+              },
+            ],
+          },
+        ],
+      },
 
       grid: {
         show: false,
@@ -87,7 +153,21 @@ const App = () => {
     series: [
       {
         name: "Actual",
-        data: [1.7],
+        data: [
+          {
+            x: "2011",
+            y: 12,
+            goals: [
+              {
+                name: "Expected",
+                value: 14,
+                strokeWidth: 2,
+                strokeDashArray: 2,
+                strokeColor: "#775DD0",
+              },
+            ],
+          },
+        ],
       },
     ],
   });
@@ -95,15 +175,12 @@ const App = () => {
   return (
     <div className="app">
       <div className="row">
-        {/* <div className="mixed-chart">
-          <ApexChart
-            options={chartData.options}
-            series={chartData.series}
-            type="bar"
-            width="500"
-          />
-        </div> */}
-        <div className="mixed-chart" style={{ height: "200px" }}>
+        <div
+          className="mixed-chart"
+          style={{
+            marginTop: "50px",
+          }}
+        >
           <ApexChart
             options={chartData.options}
             series={chartData.series}
