@@ -87,7 +87,7 @@ const App = () => {
     series: [
       {
         name: "Actual",
-        data: [16.7],
+        data: [1.7],
       },
     ],
   });
