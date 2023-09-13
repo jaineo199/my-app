@@ -1,33 +1,21 @@
 import React, { useState } from "react";
+import { DateRangePicker } from "rsuite";
+import "rsuite/dist/rsuite.min.css";
 
-interface DateRangePickerProps {
-  onDateRangeChange: (startDate: Date, endDate: Date) => void;
-}
+const DateRange = () => {
+  const [value, setValue] = useState<any>([null, null]);
 
-export default function DateRangePicker(props: DateRangePickerProps) {
-  const [startDate, setStartDate] = useState<any>(null);
-  const [endDate, setEndDate] = useState<any>(null);
+  const handleDateChange = (value: any) => {
+    console.log(value);
 
-  const handleStartDateChange = (
-    event: React.ChangeEvent<HTMLInputElement>
-  ) => {
-    const date = new Date(event.target.value);
-    setStartDate(date);
-    props.onDateRangeChange(date, endDate);
-  };
-
-  const handleEndDateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const date = new Date(event.target.value);
-    setEndDate(date);
-    props.onDateRangeChange(startDate, date);
+    setValue(value);
   };
 
   return (
     <div>
-      <label htmlFor="start-date">Start Date:</label>
-      <input type="date" id="start-date" onChange={handleStartDateChange} />
-      <label htmlFor="end-date">End Date:</label>
-      <input type="date" id="end-date" onChange={handleEndDateChange} />
+      <DateRangePicker value={value} onChange={handleDateChange} />
     </div>
   );
-}
+};
+
+export default DateRange;

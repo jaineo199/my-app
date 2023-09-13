@@ -23,6 +23,7 @@
     "react-apexcharts": "^1.4.1",
     "react-date-range": "^1.4.0",
     "react-dom": "18.2.0",
+    "rsuite": "^5.40.0",
     "typescript": "5.2.2"
   },
   "devDependencies": {
