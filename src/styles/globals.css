@@ -1,0 +1,13 @@
+.rs-picker-daterange-header {
+  display: none !important;
+}
+
+.rs-picker-toolbar {
+  display: none !important;
+}
+
+.rs-calendar-header-has-month:not(.rs-calendar-header-has-time)
+  .rs-calendar-header-backward {
+  position: absolute;
+  right: 48px;
+}
