@@ -31,3 +31,9 @@
   line-height: normal;
   text-align: center;
 }
+
+/* Add a border to the right of each cell in the tbody section */
+.tableMainStyle tbody td {
+  border-right: 1px solid #ededed; /* You can adjust the color and width as needed */
+  width: 0.5px;
+}
