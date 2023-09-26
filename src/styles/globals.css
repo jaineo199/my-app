@@ -1,13 +1,33 @@
-.rs-picker-daterange-header {
-  display: none !important;
+.containerTableStyle {
+  border-radius: 3.217px;
+  background: rgba(243, 243, 243, 0.5);
+  height: 415px;
+  flex-shrink: 0;
 }
 
-.rs-picker-toolbar {
-  display: none !important;
+.tableMainStyle {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.rs-calendar-header-has-month:not(.rs-calendar-header-has-time)
-  .rs-calendar-header-backward {
-  position: absolute;
-  right: 48px;
+.tableHeaderTextStyle {
+  color: #040404;
+  font-size: 12.062px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.theadStyle {
+  background: #ededed;
+  height: 56.51px;
+}
+
+.tableContentStyle {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
 }
