@@ -1,7 +1,7 @@
 .containerTableStyle {
   border-radius: 3.217px;
   background: rgba(243, 243, 243, 0.5);
-  height: 415px;
+  /* height: 415px; */
   flex-shrink: 0;
 }
 
@@ -36,4 +36,25 @@
 .tableMainStyle tbody td {
   border-right: 1px solid #ededed; /* You can adjust the color and width as needed */
   width: 0.5px;
+}
+
+.tableTbodyTrStyle {
+  height: 45.939px;
+}
+
+.tableFooterTrStyle {
+  height: 45.939px;
+  border-radius: 3.217px;
+  background: rgba(243, 243, 243, 0.5) !important;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+
+/* Define background colors for even and odd rows */
+.tableMainStyle tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.tableMainStyle tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* Background color for odd rows */
 }

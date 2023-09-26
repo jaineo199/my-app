@@ -38,7 +38,7 @@ function TableReact(props: any) {
         </thead>
         <tbody>
           {table.getRowModel().rows.map((row) => (
-            <tr key={row.id}>
+            <tr key={row.id} className="tableTbodyTrStyle">
               {row.getVisibleCells().map((cell) => (
                 <td key={cell.id} className="tableContentStyle">
                   {flexRender(cell.column.columnDef.cell, cell.getContext())}
@@ -47,7 +47,7 @@ function TableReact(props: any) {
             </tr>
           ))}
         </tbody>
-        <tfoot>
+        <tfoot className="tableFooterTrStyle">
           {table.getFooterGroups().map((footerGroup) => (
             <tr key={footerGroup.id}>
               {footerGroup.headers.map((header) => (
