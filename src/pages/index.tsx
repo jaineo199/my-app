@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import DateComponent from "../components/DateRange";
 import TableReact from "../components/TableReact";
 import { createColumnHelper } from "@tanstack/react-table";
@@ -83,6 +83,10 @@ const defaultData = [
 
 const Index = () => {
   const columnHelper = createColumnHelper<any>();
+  const [isClient, setIsClient] = useState(false);
+  React.useEffect(() => {
+    setIsClient(true);
+  }, []);
   const columns = [
     columnHelper.accessor("firstName", {
       cell: (info) => info.getValue(),
@@ -134,7 +138,8 @@ const Index = () => {
       <DraggableItem name="Item 1" />
       <DraggableItem name="Item 2" />
       <DroppableTarget />
-      <TableDnD />
+      {/* <TableDnD /> */}
+      {isClient && <TableDnD />}
     </div>
   );
 };
