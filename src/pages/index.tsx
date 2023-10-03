@@ -4,6 +4,7 @@ import TableReact from "../components/TableReact";
 import { createColumnHelper } from "@tanstack/react-table";
 import DraggableItem from "../components/DraggableItem";
 import DroppableTarget from "../components/DroppableTarget";
+import TableDnD from "../components/TableDnD";
 
 const defaultData = [
   {
@@ -133,6 +134,7 @@ const Index = () => {
       <DraggableItem name="Item 1" />
       <DraggableItem name="Item 2" />
       <DroppableTarget />
+      <TableDnD />
     </div>
   );
 };
