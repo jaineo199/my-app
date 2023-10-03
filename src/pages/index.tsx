@@ -2,6 +2,8 @@ import React from "react";
 import DateComponent from "../components/DateRange";
 import TableReact from "../components/TableReact";
 import { createColumnHelper } from "@tanstack/react-table";
+import DraggableItem from "../components/DraggableItem";
+import DroppableTarget from "../components/DroppableTarget";
 
 const defaultData = [
   {
@@ -117,7 +119,7 @@ const Index = () => {
   ];
   return (
     <div>
-      <div className="containerTableStyle">
+      {/* <div className="containerTableStyle">
         <div
           style={{
             display: "flex",
@@ -127,7 +129,10 @@ const Index = () => {
           <span className="tableHeaderTextStyle">Table Summary: Reporting</span>
           <TableReact defaultData={defaultData} columns={columns} />
         </div>
-      </div>
+      </div> */}
+      <DraggableItem name="Item 1" />
+      <DraggableItem name="Item 2" />
+      <DroppableTarget />
     </div>
   );
 };
