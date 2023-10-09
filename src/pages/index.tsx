@@ -124,7 +124,7 @@ const Index = () => {
   ];
   return (
     <div>
-      {/* <div className="containerTableStyle">
+      <div className="containerTableStyle">
         <div
           style={{
             display: "flex",
@@ -134,12 +134,12 @@ const Index = () => {
           <span className="tableHeaderTextStyle">Table Summary: Reporting</span>
           <TableReact defaultData={defaultData} columns={columns} />
         </div>
-      </div> */}
-      <DraggableItem name="Item 1" />
+      </div>
+      {/* <DraggableItem name="Item 1" />
       <DraggableItem name="Item 2" />
-      <DroppableTarget />
+      <DroppableTarget /> */}
       {/* <TableDnD /> */}
-      {isClient && <TableDnD />}
+      {/* {isClient && <TableDnD />} */}
     </div>
   );
 };

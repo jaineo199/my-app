@@ -1,0 +1,41 @@
+.wrapper {
+  width: 100%;
+  position: relative;
+  background: #efefef;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.container {
+  overflow-y: scroll;
+  height: 200px;
+  border-top: 41px solid transparent;
+  border-bottom: 41px solid transparent;
+}
+
+.tableMainBodyStyle {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tableHeaderFooterStyle {
+  position: absolute;
+  color: #fff;
+  padding: 10px;
+  margin-left: -10px;
+  line-height: normal;
+  width: 100%;
+  z-index: 2;
+  text-align: left;
+  font-weight: bold;
+  background: aquamarine;
+}
+
+.theadstyle {
+  top: 0;
+}
+
+.theadFooterStyle {
+  bottom: 0;
+}

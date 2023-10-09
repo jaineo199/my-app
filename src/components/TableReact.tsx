@@ -5,6 +5,7 @@ import {
   getCoreRowModel,
   useReactTable,
 } from "@tanstack/react-table";
+import styles from "../styles/Table.module.css";
 
 function TableReact(props: any) {
   const { defaultData, columns } = props;
@@ -18,53 +19,69 @@ function TableReact(props: any) {
   });
 
   return (
-    <div className="p-2">
-      <table className="tableMainStyle">
-        <thead>
-          {table.getHeaderGroups().map((headerGroup) => (
-            <tr key={headerGroup.id} className="theadStyle">
-              {headerGroup.headers.map((header) => (
-                <th key={header.id}>
-                  {header.isPlaceholder
-                    ? null
-                    : flexRender(
-                        header.column.columnDef.header,
-                        header.getContext()
-                      )}
-                </th>
-              ))}
-            </tr>
-          ))}
-        </thead>
-        <tbody>
-          {table.getRowModel().rows.map((row) => (
-            <tr key={row.id} className="tableTbodyTrStyle">
-              {row.getVisibleCells().map((cell) => (
-                <td key={cell.id} className="tableContentStyle">
-                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                </td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-        <tfoot className="tableFooterTrStyle">
-          {table.getFooterGroups().map((footerGroup) => (
-            <tr key={footerGroup.id}>
-              {footerGroup.headers.map((header) => (
-                <th key={header.id}>
-                  {header.isPlaceholder
-                    ? null
-                    : flexRender(
-                        header.column.columnDef.footer,
-                        header.getContext()
-                      )}
-                </th>
-              ))}
-            </tr>
-          ))}
-        </tfoot>
-      </table>
-      <div className="h-4" />
+    <div className={styles.wrapper}>
+      <div className={styles.container}>
+        <table className={styles.tableMainBodyStyle}>
+          <thead>
+            {table.getHeaderGroups().map((headerGroup) => (
+              <tr key={headerGroup.id} className="theadStyle">
+                {headerGroup.headers.map((header) => (
+                  <th key={header.id}>
+                    <div
+                      className={styles.tableHeaderFooterStyle}
+                      style={{
+                        top: 0,
+                      }}
+                    >
+                      {header.isPlaceholder
+                        ? null
+                        : flexRender(
+                            header.column.columnDef.header,
+                            header.getContext()
+                          )}
+                    </div>
+                  </th>
+                ))}
+              </tr>
+            ))}
+          </thead>
+          <tbody>
+            {table.getRowModel().rows.map((row) => (
+              <tr key={row.id} className="tableTbodyTrStyle">
+                {row.getVisibleCells().map((cell) => (
+                  <td key={cell.id} className="tableContentStyle">
+                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+          <tfoot className="tableFooterTrStyle">
+            {table.getFooterGroups().map((footerGroup) => (
+              <tr key={footerGroup.id}>
+                {footerGroup.headers.map((header) => (
+                  <th key={header.id}>
+                    <div
+                      className={styles.tableHeaderFooterStyle}
+                      style={{
+                        bottom: 0,
+                      }}
+                    >
+                      {header.isPlaceholder
+                        ? null
+                        : flexRender(
+                            header.column.columnDef.footer,
+                            header.getContext()
+                          )}
+                    </div>
+                  </th>
+                ))}
+              </tr>
+            ))}
+          </tfoot>
+        </table>
+        <div className="h-4" />
+      </div>
     </div>
   );
 }
