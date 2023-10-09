@@ -24,7 +24,7 @@ function TableReact(props: any) {
         <table className={styles.tableMainBodyStyle}>
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (
-              <tr key={headerGroup.id} className="theadStyle">
+              <tr key={headerGroup.id}>
                 {headerGroup.headers.map((header) => (
                   <th key={header.id}>
                     <div
@@ -56,7 +56,7 @@ function TableReact(props: any) {
               </tr>
             ))}
           </tbody>
-          <tfoot className="tableFooterTrStyle">
+          <tfoot className="">
             {table.getFooterGroups().map((footerGroup) => (
               <tr key={footerGroup.id}>
                 {footerGroup.headers.map((header) => (
@@ -80,7 +80,6 @@ function TableReact(props: any) {
             ))}
           </tfoot>
         </table>
-        <div className="h-4" />
       </div>
     </div>
   );
