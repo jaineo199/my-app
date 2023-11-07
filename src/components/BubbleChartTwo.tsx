@@ -14,7 +14,7 @@ const BubbleChart = () => {
       {
         name: "Sample Data",
         data: [
-          { x: 1, y: 20, z: 40, fillColor: "#C9232380" },
+          { x: 1, y: 20, z: 10, fillColor: "#C9232380" },
           { x: 2, y: 15, z: 30, fillColor: "#FFE60080" },
           { x: 3, y: 25, z: 35, fillColor: "#45D13680" },
           { x: 4, y: 30, z: 25, fillColor: "#45D13680" },
@@ -46,6 +46,9 @@ const BubbleChart = () => {
     },
     grid: {
       show: false,
+      padding: {
+        left: 30,
+      },
     },
     tooltip: {
       enabled: true,
@@ -86,12 +89,12 @@ const BubbleChart = () => {
       items: {
         display: "flex",
       },
-      fixed: {
-        enabled: false,
-        position: "topRight",
-        offsetX: 0,
-        offsetY: 0,
-      },
+      //   fixed: {
+      //     enabled: false,
+      //     position: "topRight",
+      //     offsetX: 0,
+      //     offsetY: 0,
+      //   },
     },
   };
 
@@ -102,6 +105,7 @@ const BubbleChart = () => {
         series={options.series}
         type="bubble"
         height={600}
+        width={500}
       />
     </div>
   );
