@@ -30,6 +30,12 @@ const BubbleChart = () => {
       title: {
         text: "X-Axis",
       },
+      axisBorder: {
+        show: false,
+      },
+      axisTicks: {
+        show: false,
+      },
     },
     yaxis: {
       tickAmount: 5,
