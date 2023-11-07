@@ -21,12 +21,12 @@ const BubbleChart = () => {
           [5, 10, 45],
           [6, 35, 20],
           [7, 45, 10],
-          [8, 50, 30],
+          [8, 37, 10],
         ],
       },
     ],
     xaxis: {
-      tickAmount: 4,
+      tickAmount: 8,
       title: {
         text: "X-Axis",
       },
