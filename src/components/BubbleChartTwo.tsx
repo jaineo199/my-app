@@ -37,8 +37,9 @@ const BubbleChart = () => {
         text: "Y-Axis",
       },
     },
-
-    //removed zoom in ,zoom out, home and other options from top right corner
+    grid: {
+      show: false,
+    },
   };
 
   return (
