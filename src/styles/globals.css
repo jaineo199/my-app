@@ -1,60 +1,6 @@
-.containerTableStyle {
-  border-radius: 3.217px;
-  background: rgba(243, 243, 243, 0.5);
-  /* height: 415px; */
-  flex-shrink: 0;
-}
-
-.tableMainStyle {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.tableHeaderTextStyle {
-  color: #040404;
-  font-size: 12.062px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.theadStyle {
-  background: #ededed;
-  height: 56.51px;
-}
-
-.tableContentStyle {
-  color: #000;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-align: center;
-}
-
-/* Add a border to the right of each cell in the tbody section */
-.tableMainStyle tbody td {
-  border-right: 1px solid #ededed; /* You can adjust the color and width as needed */
-  width: 0.5px;
-}
-
-.tableTbodyTrStyle {
-  height: 45.939px;
-}
-
-.tableFooterTrStyle {
-  height: 45.939px;
-  border-radius: 3.217px;
-  background-color: rgba(243, 243, 243, 0.5) !important;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-}
-
-/* Define background colors for even and odd rows */
-.tableMainStyle tbody tr:nth-child(even) {
-  background: #f9f9f9;
-}
-
-.tableMainStyle tbody tr:nth-child(odd) {
-  background-color: #ffffff; /* Background color for odd rows */
+/* Custom tooltip styles */
+.apexcharts-tooltip {
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid white !important;
 }

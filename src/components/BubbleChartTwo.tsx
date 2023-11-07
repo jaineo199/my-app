@@ -25,6 +25,7 @@ const BubbleChart = () => {
         ],
       },
     ],
+
     xaxis: {
       tickAmount: 8,
       title: {
@@ -45,6 +46,52 @@ const BubbleChart = () => {
     },
     grid: {
       show: false,
+    },
+    tooltip: {
+      enabled: true,
+      enabledOnSeries: undefined,
+      shared: true,
+      followCursor: true,
+      intersect: false,
+      inverseOrder: false,
+      custom: undefined,
+      fillSeriesColor: false,
+      theme: false,
+      style: {
+        fontSize: "12px",
+        fontFamily: undefined,
+        backgroundColor: "black",
+      },
+      onDatasetHover: {
+        highlightDataSeries: false,
+      },
+      x: {
+        show: true,
+        format: "dd MMM",
+        formatter: undefined,
+      },
+      y: {
+        formatter: undefined,
+        title: {
+          formatter: (seriesName: any) => seriesName,
+        },
+      },
+      z: {
+        formatter: undefined,
+        title: "Size: ",
+      },
+      //   marker: {
+      //     show: true,
+      //   },
+      items: {
+        display: "flex",
+      },
+      fixed: {
+        enabled: false,
+        position: "topRight",
+        offsetX: 0,
+        offsetY: 0,
+      },
     },
   };
 
