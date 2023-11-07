@@ -6,6 +6,9 @@ const BubbleChart = () => {
   const options: any = {
     chart: {
       type: "bubble",
+      toolbar: {
+        show: false,
+      },
     },
     series: [
       {
@@ -34,6 +37,8 @@ const BubbleChart = () => {
         text: "Y-Axis",
       },
     },
+
+    //removed zoom in ,zoom out, home and other options from top right corner
   };
 
   return (
