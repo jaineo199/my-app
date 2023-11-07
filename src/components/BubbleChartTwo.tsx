@@ -42,8 +42,8 @@ const BubbleChart = () => {
         options={options}
         series={options.series}
         type="bubble"
-        height={500}
-        width={800}
+        height={600}
+        width={1200}
       />
     </div>
   );
