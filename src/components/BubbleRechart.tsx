@@ -30,26 +30,41 @@ export const options: any = {
 export const data = {
   datasets: [
     {
-      label: "Red dataset",
+      label: "CPP",
       data: [
         { x: 2, y: 4, r: 15 },
         { x: 2, y: 2, r: 10 },
-        { x: 3, y: 3, r: 15 },
+        { x: 3, y: 2.4, r: 15 },
         { x: 4, y: 4, r: 20 },
         { x: 5, y: 5, r: 25 },
       ],
       backgroundColor: "rgba(255, 99, 132, 0.5)",
     },
     {
-      label: "Blue dataset",
+      label: "Revenue",
       data: [
         { x: 1, y: 1, r: 5 },
         { x: 2, y: 2, r: 10 },
-        { x: 3, y: 3, r: 15 },
+        { x: 3, y: 3.2, r: 15 },
         { x: 4, y: 4, r: 20 },
         { x: 5, y: 5, r: 25 },
       ],
       backgroundColor: "rgba(53, 162, 235, 0.5)",
+    },
+    {
+      label: "Target",
+      data: [
+        { x: 1, y: 3, r: 5 },
+        { x: 1.5, y: 3, r: 5 },
+        { x: 2, y: 3, r: 5 },
+        { x: 2.5, y: 3, r: 5 },
+        { x: 3, y: 3, r: 5 },
+        { x: 3.5, y: 3, r: 5 },
+        { x: 4, y: 3, r: 5 },
+        { x: 4.5, y: 3, r: 5 },
+        { x: 5, y: 3, r: 5 },
+      ],
+      backgroundColor: "#A9A8A6",
     },
   ],
 };
