@@ -8,18 +8,20 @@ import {
 } from "chart.js";
 import { Bubble } from "react-chartjs-2";
 
+ChartJS.defaults.borderColor = "#FFFFFF";
+
 ChartJS.register(LinearScale, PointElement, Tooltip, Legend);
 
 export const options: any = {
   scales: {
     x: {
       grid: {
-        display: false,
+        display: true,
       },
     },
     y: {
       grid: {
-        display: false,
+        display: true,
       },
     },
   },
