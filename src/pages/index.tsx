@@ -2,6 +2,7 @@ import React from "react";
 import BubbleChartComponent from "../components/BubbleChart";
 import BubbleChartTwoComponent from "../components/BubbleChartTwo";
 import CustomBubbleChart from "@/components/CustomBubbleChart";
+import ChartBubbleChart from "@/components/BubbleRechart";
 
 const data = [
   { value: 10 },
@@ -16,7 +17,8 @@ const Index = () => {
     <div>
       {/* <BubbleChartComponent /> */}
       {/* <BubbleChartTwoComponent /> */}
-      <CustomBubbleChart data={data} />
+      {/* <CustomBubbleChart data={data} /> */}
+      <ChartBubbleChart />
     </div>
   );
 };
