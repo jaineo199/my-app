@@ -13,7 +13,22 @@ ChartJS.defaults.borderColor = "#FFFFFF";
 ChartJS.register(LinearScale, PointElement, Tooltip, Legend);
 
 export const options: any = {
-  scales: {},
+  scales: {
+    x: {
+      display: true,
+      title: {
+        display: true,
+        text: "Revenue", // Custom label for x-axis
+      },
+    },
+    y: {
+      display: true,
+      title: {
+        display: true,
+        text: "CPP", // Custom label for y-axis
+      },
+    },
+  },
 };
 
 export const data = {
