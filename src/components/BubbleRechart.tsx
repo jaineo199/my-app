@@ -14,16 +14,16 @@ ChartJS.register(LinearScale, PointElement, Tooltip, Legend);
 
 export const options: any = {
   scales: {
-    x: {
-      grid: {
-        display: true,
-      },
-    },
-    y: {
-      grid: {
-        display: true,
-      },
-    },
+    // x: {
+    //   grid: {
+    //     display: true,
+    //   },
+    // },
+    // y: {
+    //   grid: {
+    //     display: true,
+    //   },
+    // },
   },
 };
 
@@ -32,7 +32,7 @@ export const data = {
     {
       label: "Red dataset",
       data: [
-        { x: 1, y: 1, r: 5 },
+        { x: 2, y: 4, r: 15 },
         { x: 2, y: 2, r: 10 },
         { x: 3, y: 3, r: 15 },
         { x: 4, y: 4, r: 20 },
