@@ -7,6 +7,7 @@ import {
   Legend,
 } from "chart.js";
 import { Bubble } from "react-chartjs-2";
+import BubbleChartData from "../../src/bubbleChartData.json";
 
 ChartJS.defaults.borderColor = "#FFFFFF";
 
