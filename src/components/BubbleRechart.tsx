@@ -13,18 +13,7 @@ ChartJS.defaults.borderColor = "#FFFFFF";
 ChartJS.register(LinearScale, PointElement, Tooltip, Legend);
 
 export const options: any = {
-  scales: {
-    // x: {
-    //   grid: {
-    //     display: true,
-    //   },
-    // },
-    // y: {
-    //   grid: {
-    //     display: true,
-    //   },
-    // },
-  },
+  scales: {},
 };
 
 export const data = {
